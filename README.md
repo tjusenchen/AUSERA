@@ -10,7 +10,7 @@ We have made the tool AUSERA and the corresponding dataset publicly available. W
 
 ## Usage
 
-> !! put target apk file to `apks` folder
+> Please put target apk file under test to `apks` folder
 > 
 > output report can be found in `engine-result/engine-report/apk_sha256_output.json`
 
