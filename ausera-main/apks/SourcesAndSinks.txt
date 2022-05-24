@@ -1,0 +1,49 @@
+% GUI and Server Data
+<android.widget.EditText: android.text.Editable getText()> -> _SOURCE_ 
+
+% SQL sinks
+<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)> -> _SINK_
+
+% SharedPreferences sinks
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)> -> _SINK_
+
+% Logging sinks
+<android.util.Log: int d(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int v(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int wtf(java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int wtf(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int wtf(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+
+% SD Card or internal sinks
+<java.io.OutputStream: void write(byte[])> -> _SINK_
+<java.io.OutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.OutputStream: void write(int)> -> _SINK_
+<java.io.FileOutputStream: void write(byte[])> -> _SINK_
+<java.io.FileOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.FileOutputStream: void write(int)> -> _SINK_
+<java.io.Writer: void write(char[])> -> _SINK_
+<java.io.Writer: void write(char[],int,int)> -> _SINK_
+<java.io.Writer: void write(int)> -> _SINK_
+<java.io.Writer: void write(java.lang.String)> -> _SINK_
+<java.io.Writer: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.Writer: java.io.Writer append(java.lang.CharSequence)> -> _SINK_
+<java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)> -> _SINK_
+
+% Sensitive Data Transmission
+% SMS sinks
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_ 
+<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_ 
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)> android.permission.SEND_SMS -> _SINK_ 
