@@ -23,6 +23,20 @@ AUSERA is an automated tool for detecting security vulnerabilties in Android app
 
 `python2.7 apk-engine.py /media/dell/49fff1d2-ef19-4e4d-855b-4eca95be873a/dell/Tools/ausera-main/ /usr/lib/jvm/jdk1.8.0_45/ /media/dell/49fff1d2-ef19-4e4d-855b-4eca95be873a/dell/Tools/ausera-main/engine-configuration/libs/android-platforms/`
 
+## Output
+```
+Public Id: BUG-A003-0001; 
+Type: Security Bug; 
+Risk Level: High; 
+Risk Score: 8;
+Sub Type: SMS data leakage; // App vulnerability type
+Description: The app sends an SMS attached with the sensitive data (in plaintext) to authenticate that user, but the data is stored in the SMS outbox unexpectedly. If an adversary registers a content observer to the SMS outbox on the mobile device with some permissions, the user's sensitive data can be easily intercepted by the adversary who impersonates that user to manipulate her legitimate banking account.
+Location: Found a flow to sink virtualinvoke $r10.<android.telephony.SmsManager: void sendTextMessage(), from the following sources: $r5 = virtualinvoke $r4.<android.widget.EditText: android.text.Editable getText()>() (in <com.globe.gcash.android.activity.transaction.RegistrationTransactionActivity: void doNext()>) 
+=> RegistrationTransactionActivity;doNext();$r4;$r5 // Activity, Method, Variables logging
+==> pin;firstName;lastName;addr // Sensitive data tagging
+Patch Method: Avoid sending sensitive data via SMS and store the sensitive data in the SMS outbox accordingly.
+```
+
 ## Papers
 
 
