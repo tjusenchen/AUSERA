@@ -1,6 +1,6 @@
 
 ## AUSERA
-AUSERA is an automated tool for detecting security vulnerabilties in Android apps. We have made the tool AUSERA and the corresponding dataset publicly available. We hope this project can benefit other researchers or practiontiners in the field of security analysis of Android apps. Please feel free to contact us (senchen@tju.edu.cn) if you have any questions and issues. We will continue to maintain this project. Thanks for your feedback.
+AUSERA is an automated tool for detecting security vulnerabilties in Android apps. We have made the tool and the corresponding benchmark dataset publicly available. We hope this project can benefit other researchers or practiontiners in the field of security analysis of Android apps. Please feel free to contact us (senchen@tju.edu.cn) if you have any questions and issues. We will continue to maintain this project. Thanks for your feedback.
 
 ## Environment Configuration
 * Ubuntu/Macbook
