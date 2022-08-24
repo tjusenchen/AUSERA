@@ -7,6 +7,17 @@ AUSERA is an automated tool for detecting security vulnerabilties in Android app
 * Python: (both 2 and 3 should be fine)
 * APKTool: 2.4.1 Install ApkTool, ref: [ApkTool Install Instructions](https://ibotpeaches.github.io/Apktool/install/)
 * Java environment (jdk): jdk1.8.0_45 `export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_45` Install android SDK, ref: [sdkmanager](https://developer.android.com/studio/command-line/sdkmanager). On mac,  the sdks will be saved in `~/Library/Android/sdk/platforms`
+* Open ~/.bashrc and configure the path of JDK and SDK (Replace by your own paths):
+```
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_45
+export JAVA_BIN=/usr/lib/jvm/jdk1.8.0_45/bin
+export CLASSPATH=.:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar
+export PATH=$PATH:${JAVA_HOME}/bin
+export PATH=$PATH:/home/dell/Android/Sdk/tools
+export PATH=$PATH:/home/dell/Android/Sdk/platform-tools
+export PATH=$PATH:/home/dell/Android/Sdk/emulator
+export JAVA_HOME JAVA_BIN CLASSPATH PATH 
+```
 
 ## Usage
 
