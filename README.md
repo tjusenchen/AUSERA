@@ -19,6 +19,9 @@ export PATH=$PATH:/home/dell/Android/Sdk/emulator
 export JAVA_HOME JAVA_BIN CLASSPATH PATH 
 ```
 
+## Execution Record
+https://youtu.be/sfUK3b3IuEU
+
 ## Usage
 
 > Please put target apk file under test to `apks` folder
