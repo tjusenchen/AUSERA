@@ -74,6 +74,8 @@ def main():
             else:
                 with open(flowdroid_file, "ab") as flowdroid:
                     flowdroid.write(apk + ": succeed(Flowdroid)" + "\n")
+            
+            '''
             if (os.system("java -jar " + apk_engine_iccta_jar + " " + apk + " " + apk_engine_iccta_android_jar + " "
                 + environment_apk_engine + " " + jdk_version)):
                 with open(iccta_file, "ab") as iccta:
@@ -81,7 +83,7 @@ def main():
             else:
                 with open(iccta_file, "ab") as iccta:
                     iccta.write(apk + ": succeed(IccTA)" + "\n")
-            '''
+            
             if (os.system("java -jar " + apk_engine_jar + " " + apk + " " + environment_apk_engine + " " + jdk_version + " " + sdk_path)):
                 with open(first_file, "ab") as first:
                     first.write(apk + ": fail(APKEngine)" + "\n")
