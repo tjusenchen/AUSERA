@@ -54,7 +54,7 @@ Patch Method: Avoid sending sensitive data via SMS and store the sensitive data 
 ## Papers
 
 
-[1] AUSERA: Automated Security Risk Assessment for Vulnerability Detection in Android Apps (Demo paper)
+[1] AUSERA: Automated Security Risk Assessment for Vulnerability Detection in Android Apps
 ```
 @inproceedings{chen2022ausera,
   title={AUSERA: Automated Security Risk Assessment for Vulnerability Detection in Android Apps},
@@ -64,7 +64,7 @@ Patch Method: Avoid sending sensitive data via SMS and store the sensitive data 
 }
 ```
 
-[2] An Empirical Assessment of Security Risks of Global Android Banking Apps (Research paper)
+[2] An Empirical Assessment of Security Risks of Global Android Banking Apps
 ```
 @inproceedings{chen2019ausera,
   title={An Empirical Assessment of Security Risks of Global {Android} Banking Apps},
@@ -74,7 +74,7 @@ Patch Method: Avoid sending sensitive data via SMS and store the sensitive data 
 }
 ```
 
-[3] Are Mobile Banking Apps Secure? What Can be Improved? (Industry paper)
+[3] Are Mobile Banking Apps Secure? What Can be Improved?
 ```
 @inproceedings{chen2018mobile,
   title={Are mobile banking apps secure? {What} can be improved?},
