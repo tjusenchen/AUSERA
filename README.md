@@ -1,4 +1,4 @@
-# We propose a unified platform named [VusTotal](http://www.sctruster.com/) for evaluating Android SAST tools. The platform combines the detection capability of 11 Android SAST tools and generates a corresponding detection report (CSV file) for the target APK.
+# NEW: We propose a unified platform named [VusTotal](http://www.sctruster.com/) for evaluating Android SAST tools. The platform combines the detection capability of 11 Android SAST tools and generates a corresponding detection report (CSV file) for the target APK.
 
 ## AUSERA
 AUSERA is an automated tool for detecting security vulnerabilties in Android apps. We have made the tool and the corresponding benchmark dataset publicly available. We hope this project can benefit other researchers or practiontiners in the field of security analysis of Android apps. Please feel free to contact us (senchen@tju.edu.cn) if you have any questions and issues. We will continue to maintain this project. Thanks for your feedback.
